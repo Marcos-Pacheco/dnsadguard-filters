@@ -3,14 +3,14 @@
 ! Description: Lista de domínios utilizados por serviços de vídeos curtos como TikTok, YouTube Shorts e Kwai. Baseada em análise de tráfego e listas públicas. Inclui CDNs e APIs necessárias para o funcionamento dessas plataformas.
 ! Homepage: https://github.com/Marcos-Pacheco/dnsadguard-filters
 ! License: https://github.com/Marcos-Pacheco/dnsadguard-filters/blob/main/LICENSE
-! Last modified: 2026-03-16T09:38:32.172Z
+! Last modified: 2026-03-16T12:20:32.172Z
 !
-! Compiled por @usuario conforme solicitação
+! Compilado conforme solicitação
 !
 !
 ! Seção TikTok
 ! Domínios principais, APIs e CDNs da ByteDance usados pelo TikTok e Musical.ly.
-! Inclui domínios de entrega de vídeo (ttwstatic.com, tiktokv.com) e CDNs regionais.
+! Inclui domínios de entrega de vídeo e infraestrutura global.
 !
 ||tiktok.com^
 ||www.tiktok.com^
@@ -19,21 +19,63 @@
 ||ttwstatic.com^
 ||tik-tokapi.com^
 ||byteoversea.com^
+||byteoversea.net^
+||bytefcdn-oversea.com^
+||bytefcdn-ttpeu.com^
+||bytefcdn-ttp.com^
+||ibyteimg.com^
 ||ibytedtos.com^
 ||ipstatp.com^
 ||muscdn.com^
 ||tiktokcdn.com^
 ||tiktokcdn-us.com^
+||tiktokcdn-eu.com^
+||tiktokcdn.in^
+||tiktokcdn.net^
+||tiktokcdn.net^
+||tiktokcdn.com.cdn.cloudflare.net^
+||p16-tiktokcdn-com.akamaized.net^
+||p16-tiktokcdn-com^
+||v16.tiktokcdn.com^
+||v19.tiktokcdn.com^
+||v20.tiktokcdn.com^
+||v21.tiktokcdn.com^
+||log.tiktokv.com^
+||api.tiktokv.com^
+||api.tiktok.com^
+||mon.tiktokv.com^
+||analytics.tiktok.com^
+!
 !
 ! Seção YouTube Shorts
-! ATENÇÃO: O YouTube Shorts utiliza o domínio youtube.com e a CDN googlevideo.com.
-! Bloquear youtube.com impede TODO o acesso ao YouTube (vídeos normais, Shorts, música).
-! googlevideo.com é a CDN principal de vídeos; bloqueá-lo interrompe a reprodução de qualquer vídeo do YouTube.
-! Estas regras são incluídas para referência, mas o bloqueio eficaz de apenas Shorts exige soluções em nível de aplicação (ex: extensões de navegador).
+! O YouTube Shorts utiliza a mesma infraestrutura do YouTube normal.
+! A CDN googlevideo.com é responsável pela entrega de vídeo.
 !
 ||youtube.com^
+||www.youtube.com^
+||m.youtube.com^
+||youtu.be^
+||youtube-nocookie.com^
+||youtubei.googleapis.com^
+||youtube.googleapis.com^
+!
+! CDN principal de vídeo do YouTube
+!
 ||googlevideo.com^
+||redirector.googlevideo.com^
+!
+! Assets, thumbnails e scripts do YouTube
+!
 ||ytimg.com^
+||i.ytimg.com^
+||s.ytimg.com^
+!
+! Infraestrutura Google utilizada durante reprodução de vídeo
+!
+||ggpht.com^
+||gvt1.com^
+||googleusercontent.com^
+!
 !
 ! Seção Kwai / Kuaishou
 ! Domínios do Kwai (versão internacional) e Kuaishou (mercado chinês), incluindo CDNs específicas.
@@ -47,8 +89,10 @@
 ||zynn.us^
 ||acfun.cn^
 !
+!
 ! Seção adicional: Outras plataformas de vídeos curtos (caso deseje expandir)
 ! Descomente conforme necessário.
+!
 ! ||likee.com^
 ! ||like.video^
 ! ||bigo.tv^
