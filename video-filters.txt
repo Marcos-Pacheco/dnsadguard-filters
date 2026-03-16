@@ -45,6 +45,8 @@
 ||api.tiktok.com^
 ||mon.tiktokv.com^
 ||analytics.tiktok.com^
+||*.tiktokcdn.com^
+||*.tiktokcdn-us.com^
 !
 !
 ! Seção YouTube Shorts
