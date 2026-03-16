@@ -33,6 +33,7 @@
 !
 ||youtube.com^
 ||googlevideo.com^
+||ytimg.com^
 !
 ! Seção Kwai / Kuaishou
 ! Domínios do Kwai (versão internacional) e Kuaishou (mercado chinês), incluindo CDNs específicas.
